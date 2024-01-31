@@ -38,10 +38,8 @@ const StyledGameCard = styled(NavLink)<{$small: boolean, $background: string}>`
     height: 100%;
     background-size: 100%;
     background-position: center;
-    background-image: url(/stuff.png);
+    background-image: url("/stuff.png");
     background-repeat: repeat;
-    transition: transform .2s ease, opacity .3s;
-    animation: ${tileAnimation} 5s linear infinite;
     opacity: 0;
   }
 
@@ -71,6 +69,7 @@ const StyledGameCard = styled(NavLink)<{$small: boolean, $background: string}>`
 
   position: relative;
   transform: scale(1);
+  
   background: ${(props) => props.$background};
   max-height: 100%;
   overflow: hidden;

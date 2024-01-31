@@ -1,5 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Carousel } from "react-bootstrap";
+import "./Carousel.css";
+import discordbanner from "./banner1.jpg";
+import discordbanner1 from "./banner2.jpg";
+
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -98,24 +103,35 @@ const Welcome = styled.div`
 
 export function WelcomeBanner() {
   return (
-    <Welcome>
-      <div>
-        <h1>Welcome to Gamba v2 👋</h1>
-        <p>
-          A fair, simple and decentralized casino on Solana.
-        </p>
-      </div>
-      <Buttons>
-        <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
-          🚀 Add Liqudity
-        </button>
-        <button onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
-          👨‍💻 Build your own
-        </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
-        </button>
-      </Buttons>
-    </Welcome>
-  )
+    <Carousel
+    touch={true}
+    controls={false} // Set controls to false to disable next and previous buttons
+
+    prevIcon={<svg width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg" className=""><path d="M2.31 33a8 8 0 010-8l9.88-17.115a8 8 0 016.929-4H38.88a8 8 0 016.928 4L55.691 25a8 8 0 010 8l-9.882 17.115a8 8 0 01-6.928 4H19.12a8 8 0 01-6.928-4L2.309 33z" fill="#5B6368"></path><path data-v-1163a730="" d="M31.762 35.339l-2.102 1.947L20.714 29l8.946-8.286 2.102 1.947L24.934 29l6.828 6.339z" fill="#fff"></path><path data-v-1163a730="" d="M23.476 27.62h13.81v2.761h-13.81v-2.762z" fill="#fff"></path></svg>}
+    nextIcon={<svg style={{ transform: "rotate(180deg)", }} width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg" className=""><path d="M2.31 33a8 8 0 010-8l9.88-17.115a8 8 0 016.929-4H38.88a8 8 0 016.928 4L55.691 25a8 8 0 010 8l-9.882 17.115a8 8 0 01-6.928 4H19.12a8 8 0 01-6.928-4L2.309 33z" fill="#5B6368"></path><path data-v-1163a730="" d="M31.762 35.339l-2.102 1.947L20.714 29l8.946-8.286 2.102 1.947L24.934 29l6.828 6.339z" fill="#fff"></path><path data-v-1163a730="" d="M23.476 27.62h13.81v2.761h-13.81v-2.762z" fill="#fff"></path></svg>}
+  >
+    <Carousel.Item>
+      <a
+        style={{ cursor: "pointer", textDecoration: "none", }}
+        href="https://discord.gg/rbxchance"
+        target="_blank"
+        rel="noreferrer" 
+    >
+        <img
+          style={{ width: "100%", border: "1px solid rgb(51 59 66)", borderRadius: "10px", }}
+          className="d-block w-100"
+          src={discordbanner}
+        />
+      </a>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        style={{ width: "100%", border: "1px solid rgb(51 59 66)", borderRadius: "10px", }}
+        className="d-block w-100"
+        src={discordbanner1}
+      />
+    </Carousel.Item>
+  </Carousel>
+  
+)
 }
