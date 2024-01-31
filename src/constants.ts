@@ -1,7 +1,7 @@
 import { GambaStandardTokens, TokenMeta } from 'gamba-react-ui-v2'
 
 // Can be configured in .env
-export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? "https://api.mainnet-beta.solana.com"
+export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? "https://mainnet.helius-rpc.com/?api-key=0ad97caa-3a29-4ff4-ba58-6c239c405cf1"
 
 // Change this value to your Solana address
 export const PLATFORM_CREATOR_ADDRESS = '3WdcfH6Gwe5bT6sXueUu7gb7U7dMq1yUFm351RJ4zLQT'
