@@ -113,7 +113,7 @@ export function WelcomeBanner() {
     <Carousel.Item>
       <a
         style={{ cursor: "pointer", textDecoration: "none", }}
-        href="https://discord.gg/rbxchance"
+        href="https://discord.gg/cX7EWsxDV8"
         target="_blank"
         rel="noreferrer" 
     >
