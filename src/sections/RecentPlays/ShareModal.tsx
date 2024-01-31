@@ -95,7 +95,7 @@ export function ShareModal({ event, onClose }: {event: GambaTransaction<'GameSet
               </div>
             </div>
             <div style={{ background: '#00000033', color: '#ffffff99', fontStyle: 'italic', display: 'flex', alignContent: 'center', gap: '10px', padding: '10px' }}>
-              <img src="/gamba.svg" height="20px" />
+              <img src="/logos.png" height="20px" />
               <div>play on {PLATFORM_SHARABLE_URL}</div>
             </div>
           </div>
